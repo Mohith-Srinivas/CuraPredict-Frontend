@@ -1,0 +1,631 @@
+/* ============================= */
+/* PAGE RESET */
+/* ============================= */
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+.home{
+  overflow-x:hidden;
+  
+}
+
+
+
+/* ============================= */
+/* HERO SECTION */
+/* ============================= */
+
+.hero{
+
+  height:70vh;
+
+  display:flex;
+  flex-direction:column;
+
+  justify-content:center;
+  align-items:center;
+
+  text-align:center;
+
+  color:white;
+
+  padding:20px;
+
+   background: linear-gradient(
+  90deg,
+  #2f6bd6,
+  #2ecc71
+  );
+
+  /* background: linear-gradient(
+  270deg,
+  #2f6bd6,
+  #4facfe,
+  #2ecc71,
+   #cc2e2e,
+    #9a2ecc
+  ); 
+
+   background-size:600% 600%;
+
+  animation: gradientMove 1s ease infinite; */
+
+  
+}
+  
+
+
+
+
+/* GRADIENT ANIMATION */
+
+/* @keyframes gradientMove {
+
+  0%{
+    background-position:0% 50%;
+  }
+
+  50%{
+    background-position:50% 100;
+  }
+
+  50%{
+    background-position:50% 0%;
+  }
+
+} */
+
+
+
+/* ============================= */
+/* HERO TEXT ANIMATION */
+/* ============================= */
+
+.hero h1{
+  font-family: "Rubik", sans-serif;
+  font-size:42px;
+
+  font-weight:700;
+
+  margin-bottom:29px;
+
+  animation: fadeSlideDown 1s ease;
+
+}
+
+.hero p{
+  font-family: "Raleway", sans-serif;
+  font-size: 18px;
+  margin-bottom: 32px;
+  max-width: 1100px;
+  animation: fadeSlideUp 1.2s ease;
+  text-align: center;
+  font-weight: 440;
+}
+
+
+
+/* TEXT ANIMATIONS */
+
+@keyframes fadeSlideDown{
+
+  from{
+    opacity:0;
+    transform:translateY(-30px);
+  }
+
+  to{
+    opacity:1;
+    transform:translateY(0);
+  }
+
+}
+
+@keyframes fadeSlideUp{
+
+  from{
+    opacity:0;
+    transform:translateY(30px);
+  }
+
+  to{
+    opacity:1;
+    transform:translateY(0);
+  }
+
+}
+
+
+
+/* ============================= */
+/* BUTTON */
+/* ============================= */
+
+.predict-btn{
+
+  padding:12px 28px;
+  font-family: "Railway", sans-serif;
+  border:none;
+
+  border-radius:30px;
+
+  background:white;
+
+  color:#2f6bd6;
+
+  font-size:16px;
+
+  font-weight:600;
+
+  cursor:pointer;
+
+  transition:all 0.3s ease;
+
+  box-shadow:0 8px 20px rgba(0,0,0,0.15);
+
+}
+
+
+/* BUTTON HOVER */
+
+.predict-btn:hover{
+
+  transform:scale(1.08);
+
+  background:#2f6bd6;
+
+  color:white;
+
+  box-shadow:0 12px 25px rgba(0,0,0,0.25);
+
+}
+
+
+
+/* ============================= */
+/* FEATURE SECTION */
+/* ============================= */
+
+/* FEATURES SECTION */
+
+.features{
+
+  padding:40px 10%;
+
+  background:#f5f7fb;
+
+  text-align:center;
+
+}
+
+
+/* TITLE */
+
+.features-title{
+
+  font-size:36px;
+
+  font-weight:700;
+
+  color:#2f6bd6;
+
+  margin-bottom:50px;
+
+}
+
+
+/* CARD CONTAINER */
+
+.features-container{
+
+  display:flex;
+
+  justify-content:center;
+
+  gap:30px;
+
+  flex-wrap:wrap;
+
+}
+
+/* FEATURES TITLE */
+
+.features-title{
+
+  width:100%;
+  font-family: "Rubik", sans-serif;
+  text-align:center;
+
+  font-size:34px;
+
+  font-weight:700;
+
+  margin-bottom:50px;
+
+  color:#2f6bd6;
+
+  position:relative;
+
+}
+
+.features-title::after{
+
+  content:"";
+
+  width:80px;
+
+  height:4px;
+
+  background:linear-gradient(
+    90deg,
+    #2f6bd6,
+    #2ecc71
+  );
+
+  display:block;
+
+  margin:12px auto 0;
+
+  border-radius:2px;
+
+}
+
+
+/* ============================= */
+/* CARDS */
+/* ============================= */
+
+.card{
+
+  width:280px;
+
+  background:white;
+
+  padding:25px;
+
+  border-radius:14px;
+
+  text-align:center;
+
+  box-shadow:0 10px 25px rgba(0,0,0,0.08);
+
+  transition:all 0.4s ease;
+
+  animation: floatCard 6s ease-in-out infinite;
+
+}
+
+
+
+/* FLOATING CARD ANIMATION */
+
+@keyframes floatCard{
+
+  0%{
+    transform:translateY(0px);
+  }
+
+  50%{
+    transform:translateY(-10px);
+  }
+
+  100%{
+    transform:translateY(0px);
+  }
+
+}
+
+
+
+/* CARD HOVER */
+
+.card:hover{
+
+  transform:translateY(-12px) scale(1.03);
+
+  box-shadow:0 20px 40px rgba(0,0,0,0.15);
+
+}
+
+
+
+/* CARD TITLE */
+
+.card h3{
+
+  color:#2f6bd6;
+  font-family: "Rubik", sans-serif;
+  margin-bottom:10px;
+
+  font-size:20px;
+
+}
+
+
+
+/* CARD TEXT */
+
+.card p{
+  font-family: "Raleway", sans-serif;
+  font-size:15px;
+  font-weight: 450;
+  color:#444;
+  line-height:1.5;
+}
+
+/* colour strip */
+
+.card::before{
+
+  content:"";
+
+  position:absolute;
+
+  top:0;
+  left:0;
+
+  width:100%;
+  height:5px;
+
+  background:linear-gradient(
+    90deg,
+    #3a7bd5,
+    #00d2ff,
+    #2ecc71
+  );
+
+}
+
+
+/* ============================= */
+/* WHY CURAPREDICT SECTION */
+/* ============================= */
+
+.about{
+
+  padding:48px 12%;
+
+  text-align:center;
+
+  background: linear-gradient(
+    180deg,
+    #f4f8ff,
+    #eef5ff,
+    #ffffff
+  );
+
+  position:relative;
+
+  overflow:hidden;
+
+}
+
+
+/* Decorative background shapes */
+
+.about::before{
+
+  content:"";
+
+  position:absolute;
+
+  width:350px;
+  height:350px;
+
+  background:#1fde6f;
+
+  opacity:0.09;
+
+  border-radius:50%;
+
+  top:-120px;
+  left:-120px;
+
+}
+
+.about::after{
+
+  content:"";
+
+  position:absolute;
+
+  width:300px;
+  height:300px;
+
+  background:#2f8bd6;
+
+  opacity:0.09;
+
+  border-radius:50%;
+
+  bottom:-120px;
+  right:-120px;
+
+}
+
+
+/* TITLE */
+
+.about h2{
+  font-family: "Rubik", sans-serif;
+  font-size:36px;
+
+  font-weight:700;
+
+  color:#2f6bd6;
+
+  margin-bottom:20px;
+
+  position:relative;
+
+}
+
+
+/* Decorative underline */
+
+.about h2::after{
+
+  content:"";
+
+  width:80px;
+
+  height:4px;
+
+  background:linear-gradient(
+    90deg,
+    #2f6bd6,
+    #2ecc71
+  );
+
+  display:block;
+
+  margin:12px auto 0;
+
+  border-radius:2px;
+
+}
+
+
+/* DESCRIPTION */
+
+.about p{
+  font-family: "Raleway", sans-serif;
+  max-width:850px;
+
+  margin:auto;
+
+  font-size:18px;
+
+  line-height:1.8;
+
+  color:#555;
+
+  margin-bottom:50px;
+
+}
+
+
+
+/* ============================= */
+/* STATS CONTAINER */
+/* ============================= */
+
+.about-stats{
+
+  display:flex;
+
+  justify-content:center;
+
+  align-items:center;
+
+  gap:40px;
+
+  flex-wrap:wrap;
+
+  max-width:700px;   /* keeps cards grouped together */
+
+  margin:0 auto;     /* centers the whole group */
+
+}
+
+
+
+/* ============================= */
+/* STAT CARDS */
+/* ============================= */
+
+.stat{
+
+  background:white;
+
+  width:200px;
+  height:120px;
+
+  padding:10px;
+
+  border-radius:14px;
+
+  box-shadow:0 10px 25px rgba(0,0,0,0.08);
+
+  transition:all 0.35s ease;
+
+  animation: floatStat 4.5s ease-in-out infinite;
+
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+
+  text-align:center;
+
+}
+
+
+
+/* NUMBER */
+
+.stat h3{
+  font-size:30px;
+  color:#2ecc71;
+  margin-bottom:6px;
+  font-family: "Rubik", sans-serif;
+}
+
+
+
+/* TEXT */
+
+.stat p{
+  font-family: "Railway", sans-serif;
+  font-size:15px;
+  color:#444;
+    margin-bottom: 8px;
+    margin-top: 0%;
+}
+
+
+
+/* HOVER EFFECT */
+
+.stat:hover{
+
+  transform:translateY(-10px) scale(1.05);
+
+  box-shadow:0 20px 40px rgba(0,0,0,0.15);
+
+}
+
+
+
+/* FLOATING ANIMATION */
+
+@keyframes floatStat{
+
+  0%{
+    transform:translateY(0px);
+  }
+
+  50%{
+    transform:translateY(-8px);
+  }
+
+  100%{
+    transform:translateY(0px);
+  }
+
+}
+
+/* ============================= */
+/* Responsiveness */
+/* ============================= */
+
+
+@media (max-width: 880px){
+  .hero p{
+    width:fit-content;
+  }
+}
