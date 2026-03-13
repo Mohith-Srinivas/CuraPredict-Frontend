@@ -317,3 +317,9 @@ background: linear-gradient(
 .contact-link:hover{
   color: #06B6D4;
 }
+
+@media (max-width:880px) {
+ .vision-mission{
+   padding-right: 200px;
+ } 
+}
