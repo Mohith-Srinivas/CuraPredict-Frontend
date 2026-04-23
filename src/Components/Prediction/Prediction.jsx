@@ -515,7 +515,7 @@ return (
   </Select>
 </FormControl>
 
-<button type="submit" disabled={loading}>
+<button type="submit" disabled={loading}style={{fontFamily:"Raleway,sans-serief"}}>
 {loading ? "Running AI Prediction..." : "Run AI Prediction"}
 </button>
 
@@ -559,7 +559,7 @@ return (
 Disease Severity: {result.disease_severity}
 </div>
 
-<h3>Recommended Drugs</h3>
+<h3 style={{fontFamily:"Rubik,sans-serief"}}>Recommended Drugs</h3>
 
 <div className="drug-section">
 {result?.recommended_drugs?.map((drug,i)=>(
@@ -570,7 +570,7 @@ Disease Severity: {result.disease_severity}
 ))}
 </div>
 
-<h3>Lifestyle Recommendations</h3>
+<h3 style={{fontFamily:"Rubik,sans-serief",paddingTop:"13px"}}>Lifestyle Recommendations</h3>
 
 <div className="recommendations">
 {result?.lifestyle_recommendations?.map((rec,i)=>(

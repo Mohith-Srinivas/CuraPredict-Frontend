@@ -69,16 +69,19 @@ background: linear-gradient(
 }
 
 .about-intro h1{
+  font-family: "Rubik", sans-serif;
   font-size:36px;
   color:#2f6bd6;
   margin-bottom:15px;
 }
 
 .about-intro p{
+  font-family: "Raleway", sans-serif;
   font-size:16px;
   color:#444;
   line-height:1.7;
   margin-bottom:10px;
+  font-weight: 500;
 }
 
 
@@ -115,13 +118,16 @@ background: linear-gradient(
 }
 
 .vm-card h2{
+  font-family: "Rubik", sans-serif;
   color:#2f6bd6;
   margin-bottom:10px;
 }
 
 .vm-card p{
+  font-family: "Raleway", sans-serif;
   color:#555;
   line-height:1.6;
+  font-weight: 500;
 }
 
 
@@ -135,6 +141,7 @@ background: linear-gradient(
 }
 
 .services h2{
+  font-family: "Rubik", sans-serif;
   font-size:32px;
   color:#2f6bd6;
   margin-bottom:30px;
@@ -165,13 +172,16 @@ background: linear-gradient(
 }
 
 .service-card h3{
+  font-family: "Rubik", sans-serif;
   color:#2f6bd6;
   margin-bottom:10px;
 }
 
 .service-card p{
+  font-family: "Raleway", sans-serif;
   color:#555;
   font-size:15px;
+  font-weight: 500;
 }
 
 
@@ -185,11 +195,14 @@ background: linear-gradient(
 }
 
 .why h2{
+  font-family: "Rubik", sans-serif;
   color:#2f6bd6;
   margin-bottom:15px;
 }
 
 .why p{
+  font-family: "Raleway", sans-serif;
+  font-weight:500;
   max-width:800px;
   color:#555;
   line-height:1.7;
@@ -204,6 +217,7 @@ background: linear-gradient(
 }
 
 .future h2{
+  font-family: "Rubik", sans-serif;
   color:#2f6bd6;
   margin-bottom:10px;
 }
@@ -213,6 +227,8 @@ background: linear-gradient(
 }
 
 .future li{
+  font-family: "Raleway", sans-serif;
+  font-weight:500;
   margin-bottom:6px;
   color:#444;
 }
@@ -277,6 +293,7 @@ background: linear-gradient(
 }
 
 .connect h2{
+  font-family: "Rubik", sans-serif;
 
   color:#2563EB;
 
@@ -285,6 +302,7 @@ background: linear-gradient(
 }
 
 .connect p{
+  font-family: "Raleway", sans-serif;
 
   max-width:700px;
 
@@ -295,10 +313,12 @@ background: linear-gradient(
   color:#374151;
 
   line-height:1.6;
+  font-weight:500;
 
 }
 
 .connect h4{
+  font-family: "Rubik", sans-serif;
 
   margin-top:20px;
 
@@ -318,8 +338,27 @@ background: linear-gradient(
   color: #06B6D4;
 }
 
-@media (max-width:880px) {
- .vision-mission{
-   padding-right: 200px;
- } 
+@media (max-width: 330px){
+
+  .vision-mission{
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 10px 10px;
+  }
+
+  .vm-card{
+    width:100%;
+    min-width: unset;
+    padding: 18px;
+  }
+
+  .vm-card h2{
+    font-size: 24px;
+  }
+
+  .vm-card p{
+    font-size: 15px;
+  }
+
 }

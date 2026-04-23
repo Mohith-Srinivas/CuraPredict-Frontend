@@ -6,6 +6,7 @@ margin:auto;
 padding:0 20px;
 position:relative;
 z-index:2;
+
 }
 
 /* PAGE BACKGROUND */
@@ -38,7 +39,7 @@ position:absolute;
 width:420px;
 height:420px;
 
-background:#22C55E;
+background:#0ae75b;
 
 opacity:0.12;
 
@@ -60,7 +61,7 @@ position:absolute;
 width:380px;
 height:380px;
 
-background:#2563EB;
+background:#044ff1;
 
 opacity:0.12;
 
@@ -144,10 +145,11 @@ opacity:0;
 .page-title{
 text-align:center;
 color:#2563EB;
-margin-bottom:40px;
+margin-bottom:60px;
 font-size:38px;
 font-weight:700;
 letter-spacing:0.5px;
+font-family: "Rubik", sans-serif;
 
 animation: slideDown 1s ease forwards;
 }
@@ -176,7 +178,11 @@ align-items:flex-start;
 .prediction-form{
 width:520px;
 
-background: rgba(255,255,255,0.95);
+  background: linear-gradient(
+    145deg,
+    #f0f5f6,
+    #f2f7ff
+  );
 backdrop-filter: blur(12px);
 
 padding:28px;
@@ -194,6 +200,10 @@ animation: slideLeft 0.8s ease forwards;
 animation-delay:0.3s;
 opacity:0;
 
+}
+
+.prediction-form h2{
+  font-family: "Rubik", sans-serif;
 }
 
 @keyframes slideLeft{
@@ -259,7 +269,7 @@ box-shadow:0 10px 30px rgba(0,0,0,0.12);
 border:1px solid rgba(255,255,255,0.4);
 
 animation: slideRight 0.9s ease forwards;
-animation-delay:0.5s;
+animation-delay:0.6s;
 opacity:0;
 }
 

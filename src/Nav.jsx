@@ -63,7 +63,7 @@ function Navbar() {
           </li>
 
           <li>
-            <Link to="/about" onClick={() => setOpen(false)}>About</Link>
+            <Link to="/about" onClick={() => setOpen(false)}>About us </Link>
           </li>
 
           <li>
